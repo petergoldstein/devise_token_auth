@@ -3,8 +3,8 @@
 source "https://rubygems.org"
 
 gem "omniauth", "~> 2.0"
-gem "rails", "~> 7.0"
-gem "mongoid", "~> 7.0"
+gem "rails", "~> 7.0.0"
+gem "mongoid", "~> 7.0", ">= 7.3.4"
 gem "mongoid-locker", "~> 1.0"
 
 group :development, :test do
@@ -24,7 +24,7 @@ group :development, :test do
   gem "guard-minitest"
   gem "minitest"
   gem "minitest-focus"
-  gem "minitest-rails"
+  gem "minitest-rails", github: "blowmage/minitest-rails"
   gem "minitest-reporters"
   gem "mocha", ">= 1.5"
   gem "pry"

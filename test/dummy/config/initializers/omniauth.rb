@@ -9,3 +9,5 @@ Rails.application.config.middleware.use OmniAuth::Builder do |b|
            fields: [:first_name, :last_name],
            uid_field: :last_name
 end
+
+OmniAuth.config.allowed_request_methods = [:post, :get] if OmniAuth.config.respond_to?("allowed_request_methods=".to_sym)
